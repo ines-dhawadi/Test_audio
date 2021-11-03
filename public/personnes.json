@@ -1,0 +1,59 @@
+[
+  
+   
+        {   "nom":"PersonneA",
+            "sujets":{
+            "sujet1":
+               {" sujet1_1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+               " sujet1_2": ""
+            }
+            ,
+            "sujet2":{
+                " sujet2_1": "",
+                " sujet2_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+             }
+        }
+    },
+
+         
+ {   "nom":"PersonneB",
+         "sujets":{
+            "sujet1":{
+               " sujet1_1": "",
+               " sujet1_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            "sujet2":{
+                " sujet2_1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                " sujet2_2": ""
+             }
+        }
+    },
+  {     "nom":"PersonneC",
+       "sujets":{
+            "sujet1":{
+               " sujet1_1": "",
+               " sujet1_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            "sujet2":{
+                " sujet2_1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                " sujet2_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+             }
+        }},
+        { "nom":"PersonneA",
+            "sujets":{
+            "sujet1":{
+               " sujet1_1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+               " sujet1_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            "sujet2":{
+                " sujet2_1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                " sujet2_2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+             }
+        }
+     
+    }
+
+    
+
+
+]

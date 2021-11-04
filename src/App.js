@@ -5,43 +5,91 @@ import { } from "./audio/personnes.json";
 
 function App() {
   // const [audio, setAudio] = useState([]);
-  const [instractors, setInstractors] = useState(["i1", "i2", "i3", "i4"]);
-  const [subjects, setSubjects] = useState(["s1", "s2", "s3"]);
+  const [instractors, setInstractors] = useState(["personne_A", "personne_B", "personne_C"]);
+  const [subjects, setSubjects] = useState(["subject_1", "subject_2", "subject_3", "subject_4", "subject_5"]);
   const [audios, setAudios] = useState([
     {
-      instractor: "i1",
-      subject: "s1",
-      name: "s1_i1_a1",
+      instractor: "personne_A",
+      subject: "subject_1",
+      name: "subject_1_personne_A_1",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
     {
-      instractor: "i1",
-      subject: "s1",
-      name: "s1_i1_a2",
+      instractor: "personne_A",
+      subject: "subject_1",
+      name: "subject_1_personne_A_2",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
     {
-      instractor: "i2",
-      subject: "s1",
-      name: "s1_i2_a1",
+      instractor: "personne_A",
+      subject: "subject_5",
+      name: "subject_5_personne_A_2",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
     {
-      instractor: "i2",
-      subject: "s2",
-      name: "s2_i2_a1",
+      instractor: "personne_A",
+      subject: "subject_3",
+      name: "subject_3_personne_A_1",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
     {
-      instractor: "i3",
-      subject: "s1",
-      name: "s1_i3_a1",
+      instractor: "personne_B",
+      subject: "subject_1",
+      name: "subject_1_personne_B_1",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
     {
-      instractor: "i3",
-      subject: "s3",
-      name: "s3_i3_a1",
+      instractor: "personne_B",
+      subject: "subject_2",
+      name: "subject_2_personne_B_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_B",
+      subject: "subject_5",
+      name: "subject_5_personne_B_2",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_C",
+      subject: "subject_1",
+      name: "subject_1_personne_C_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_C",
+      subject: "subject_3",
+      name: "subject_3_personne_C_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_C",
+      subject: "subject_1",
+      name: "subject_1_personne_C_2",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_B",
+      subject: "subject_4",
+      name: "subject_4_personne_B_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_A",
+      subject: "subject_4",
+      name: "subject_4_personne_A_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_C",
+      subject: "subject_5",
+      name: "subject_5_personne_C_1",
+      srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
+    },
+    {
+      instractor: "personne_C",
+      subject: "subject_5",
+      name: "subject_5_personne_C_2",
       srcs: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
     },
   ]);
@@ -56,10 +104,17 @@ function App() {
   // console.log("tessssssssssssssst", audio);
   return (
     <div className="app">
-      <table className="table">
+      <div class='ripple-background'>
+  <div class='circle xxlarge shade1'></div>
+  <div class='circle xlarge shade2'></div>
+  <div class='circle large shade3'></div>
+  <div class='circle mediun shade4'></div>
+  <div class='circle small shade5'></div>
+</div>
+      <table className="table-all container">
         <thead>
           <tr className="header-row">
-            <th className="header">#</th>
+            <th className="header"></th>
             {instractors.map((instractor) => (
               <th className="header"> {instractor} </th>
             ))}
@@ -80,7 +135,7 @@ function App() {
                     )
                     .map((audio) => (
                       <div>
-                        <audio controls>
+                        <audio  controls>
                           {audio.srcs.map((x) => (
                             <source src={x} />
                           ))}
